@@ -61,74 +61,138 @@ input{
 }
 
 .carrossel {
-  position: relative;
-  width: 80%;
-  max-width: 1000px;
-  margin: 40px auto;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    width: 1340px;
+    
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* container das imagens */
 .slides {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
 }
 
-/* cada imagem */
 .slides img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 20px;
-  flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    object-position: center;
+    transition: opacity 0.5s ease-in-out;
 }
 
-/* botões */
-.anterior, .proximo {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
-  color: white;
+@keyframes slide { /*cria animações*/
+    0%, 20% { transform: translateX(0%); }
+    33%, 53% { transform: translateX(-100%); }
+    66%, 86% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+.main-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    width: 40%; 
+    height: 500px;
+    background-color: burlywood;
+    margin: 10px;
+    box-shadow: 2px solid black;
+    border-radius: 40px;
+    display: flex;              
+    flex-direction: column;     
+    align-items: center;        
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container:hover{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.imagem-tenis{
+    width: 400px;       
+    height: 300px;       
+    object-fit: cover;  
+    border-radius: 10px; 
+    justify-content: center;  
+}
+
+.main-container h2{
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.main-container h3{
+  font-family: 'Outfit', sans-serif;
+}
+
+.botao {
+  width: 400px;
+  padding: 15px;
+  border-radius: 10px;
   border: none;
-  font-size: 2rem;
-  padding: 10px 15px;
   cursor: pointer;
-  border-radius: 50%;
-  z-index: 10;
+  font-family: 'Outfit', sans-serif;
+  
 }
 
-.anterior:hover, .proximo:hover {
-  background-color: rgba(0,0,0,0.7);
+.main-container button:hover{
+  background-color: darkgray;
+
 }
 
-.anterior { left: 20px; }
-.proximo { right: 20px; }
-
-/* bolinhas */
-.bolinhas {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
+#adidas{
+    width: 400px;       
+    height: 300px;    
+    margin-top: -50px;
+    object-fit: cover;  
+    border-radius: 10px; 
+    justify-content: center; 
 }
 
-.bolinhas span {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ccc;
+#botao_adidas{
+  width: 400px;
+  padding: 15px;
+  margin-top: 48px;
+  border-radius: 10px;
+  border: none;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-family: 'Outfit', sans-serif;
 }
 
-.bolinhas span.ativa {
-  background-color: #ff7b00;
+#adidas_branco{
+   width: 400px;       
+    height: 300px;  
+    margin-top: -48px;     
+    object-fit: cover;  
+    border-radius: 10px; 
+    justify-content: center; 
 }
+
+#adidas_branco_botao{
+  width: 400px;
+  padding: 15px;
+  margin-top: 48px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Outfit', sans-serif;
+}
+
 
 
