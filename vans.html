@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <title>Vans</title>
+
+    <style>
+
+        h2{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        img{
+            width: 250px;       
+            height: 300px;       
+            object-fit: cover;  
+            border-radius: 10px; 
+            justify-content: center;  
+            margin-top: -50px;
+        }
+
+        .container{
+            display: flex;
+        }
+
+        .informacoes{
+            margin-left: 60px;
+        }
+
+        .informacoes button {
+            padding: 8px;
+            background-color: burlywood;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Outfit', sans-serif;
+            margin: 5px; 
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .informacoes button:hover{
+            background-color: rgb(241, 212, 174);
+            transform: translateY(-1px) scale(1.03);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+        }
+
+        .informacoes h3{
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .cor h3{
+            text-align: center;
+            margin-top: 20px; 
+            margin-right: 139px;
+        }
+
+        .compra button{
+            width: 170px;
+            margin-top: 60px;
+            background-color: black;
+            color: white;
+            font-family: 'Outfit', sans-serif;
+            cursor: pointer;
+        }
+
+        .compra button:hover{
+            background-color: black;
+        }
+
+        .botao.selecionado {
+            background-color: black;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        
+        
+    </style>
+</head>
+<body class="container">
+    <div class="allstar">
+        <h2>Tênis old skool </h2>
+        <img src="imagens/vans.png" alt="">
+    </div>
+    <div class="informacoes">
+        <h3>Tamanho</h3>
+        <button onclick="Selecionar(this)" class="botao">34</button>
+        <button onclick="Selecionar(this)" class="botao">35</button>
+        <button onclick="Selecionar(this)" class="botao">36</button>
+        <button onclick="Selecionar(this)" class="botao">37</button>
+        <button onclick="Selecionar(this)" class="botao">38</button>
+        <button onclick="Selecionar(this)" class="botao">39</button>
+        <button onclick="Selecionar(this)" class="botao">40</button>
+        <button onclick="Selecionar(this)" class="botao">41</button>
+
+        <div class="cor">
+            <h3>Cor:</h3>
+            <button onclick="Selecionar(this)" class="botao">Preto/Branco</button>
+        </div>
+
+        <div class="compra">
+            <button>Finalizar</button>
+        </div>
+    </div>
+
+    <script src="scripttenis.js"></script>
+</body>
+</html>

@@ -60,6 +60,7 @@ input{
     font-family: 'Outfit', sans-serif;
 }
 
+/*peguei ajuda da internet*/
 .carrossel {
     width: 1340px;
     
@@ -75,12 +76,14 @@ input{
     align-items: center;
 }
 
+/*peguei ajuda da internet*/
 .slides {
     display: flex;
     width: 300%;
     animation: slide 12s infinite;
 }
 
+/*peguei ajuda da internet*/
 .slides img {
     width: 100%;
     height: 100%;
@@ -89,6 +92,7 @@ input{
     transition: opacity 0.5s ease-in-out;
 }
 
+/*peguei ajuda da internet*/
 @keyframes slide { /*cria animações*/
     0%, 20% { transform: translateX(0%); }
     33%, 53% { transform: translateX(-100%); }
@@ -193,6 +197,66 @@ input{
   cursor: pointer;
   font-family: 'Outfit', sans-serif;
 }
+
+/*peguei ajuda da internet*/
+.popup {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/*peguei ajuda da internet*/
+.popup-conteudo {
+    background-color: #fffaf0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    width: 550px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    animation: aparecer 0.3s ease-in-out;
+}
+
+/*peguei ajuda da internet*/
+@keyframes aparecer {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/*peguei ajuda da internet*/
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    color: #a0522d;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.fechar:hover {
+  color: #d2691e;
+}
+
+/*peguei ajuda da internet*/
+#janela {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
 
 
 

@@ -35,28 +35,38 @@
             <h2>Chuck Taylor All Star Preto</h2>
             <h3>R$ 210,00</h3>
             <img src="imagens/allstar-Photoroom.png" class="imagem-tenis" alt="">
-            <button class="botao">Compre agora mesmo!</button>
+            <button class="botao" onclick="abrirPopup('allstar.html')">Compre agora mesmo!</button>
         </div>
         <div class="container">
             <h2>Tênis old skool black white</h2>
             <h3>R$ 300,00</h3>
             <img src="imagens/vans.png" class="imagem-tenis" alt="">
-            <button class="botao">Compre agora mesmo!</button>
+            <button class="botao" onclick="abrirPopup('vans.html')">Compre agora mesmo!</button>
         </div>
         <div class="container">
             <h2>Tênis Adidas Runfalcon 5</h2>
             <h3>R$ 230,00</h3>
             <img src="imagens/adidas.png" id="adidas" alt="">
-            <button id="botao_adidas">Compre agora mesmo!</button>
+            <button class="botao" id="botao_adidas" onclick="abrirPopup('adidas.html')">Compre agora mesmo!</button>
         </div>
         <div class="container">
             <h2>Tênis Adidas Breaknet - Off White</h2>
             <h3>R$ 200,00</h3>
             <img src="imagens/adidas_branco.png" id="adidas_branco" alt="">
-            <button id="adidas_branco_botao">Compre agora mesmo!</button>
+            <button class="botao" id="adidas_branco_botao" onclick="abrirPopup('adidas_branco.html')">Compre agora mesmo!</button>
         </div>
 
     </main>
+
+
+
+    <div id="popup" class="popup">
+        <div class="popup-conteudo">
+            <span class="fechar" onclick="fecharPopup()">&times;</span>
+            <iframe id="janela" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
 
 <script src="script.js"></script>
 </body>
