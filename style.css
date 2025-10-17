@@ -63,7 +63,6 @@ input{
 /*peguei ajuda da internet*/
 .carrossel {
     width: 1340px;
-    
     height: 500px;
     overflow: hidden;
     position: relative;
@@ -257,6 +256,42 @@ input{
     border-radius: 10px;
 }
 
+.contato {
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.contato p {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Outfit', sans-serif;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    background-color: rgb(153, 71, 71);
+    margin-bottom: 15px;
+    border-radius: 11px;
+}
+
+.link a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Outfit', sans-serif;
+}
 
 
 
